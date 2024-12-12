@@ -1,4 +1,12 @@
 function submitVotes(event) {
+            event.preventDefault();
+            const hasVoted = localStorage.getItem('hasVoted');
+            if (hasVoted) {
+                document.getElementById('thankYouMessage').textContent = 'You have already voted!';
+                document.getElementById('thankYouMessage').style.color = 'red';
+                return;
+            }
+function submitVotes(event) {
     event.preventDefault();
     
     const selectedTeachers = Array.from(document.querySelectorAll('input[name="teacher"]:checked')).map(input => input.value);
