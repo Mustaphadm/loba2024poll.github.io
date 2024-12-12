@@ -1,0 +1,67 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0cece;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h2 {
+            font-family: "Dancing Script", cursive;
+            font-weight: 500;
+            font-style: normal;
+            font-size: xx-large;
+        }
+        footer {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .teacher-list {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .teacher-list label {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20PX;
+        }
+        button:hover {
+            background-color: #07233e;
+        }
+        .message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            button {
+                width: 100%;
+            }
+        }
+    

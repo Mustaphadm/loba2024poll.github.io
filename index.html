@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Election Poll</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville&family=Montserrat:wght@700;800&family=Roboto+Flex:opsz@8..144&family=Sono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/Loba.jfif" alt="Election Logo" width="50" height="50" style="vertical-align: middle;">
+        <h1 style="display: inline-block; margin: 0;">LOBA 2024 REUNION POLL FOR FAVORITE TEACHER</h1>
+    </header>
+    <main>
+        <h2>Welcome to our favorite teacher poll for our 2024 reunion</h2>
+        <p>Please vote for your two favorite teachers from the list below:</p>
+        <form id="pollForm" onsubmit="submitVotes(event)">
+            <div class="teacher-list">
+                <label><input type="checkbox" name="teacher" value="Teacher 1"> MAL SULE PHYSICS</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 2"> MAL HARISU DAN HAUSA</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 3"> MAL AKILU CHEMISTRY</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 4"> MAL WALKI PRINCIPAL</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 5"> MAL MUKTAR MATH</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 6"> MAL ABDULRASHID DAUDA</label>
+                <label><input type="checkbox" name="teacher" value="Teacher 7"> MAL SALEH BIOLOGY</label>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="thankYouMessage" class="message"></p>
+        </form>
+    </main>
+    <footer>
+        <p>View the <a href="./public/auth.html" style="color: white; text-decoration: underline;">Results</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

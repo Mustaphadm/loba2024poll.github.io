@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #0078D7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #0078D7;
+    color: white;
+}
+#chartContainer {
+    width: 60%;
+    margin: 20px auto;
+}
+#resetButton, #resetChartButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#resetButton:hover, #resetChartButton:hover {
+    background-color: #C13B24;
+}
+footer {
+    background-color: #0078D7;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
